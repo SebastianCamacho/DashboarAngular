@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-control-flow',
   standalone: true,
   imports: [],
   templateUrl: './control-flow.component.html',
-  styles: ``
 })
-export class ControlFlowComponent {
+export default class ControlFlowComponent {
 
 }

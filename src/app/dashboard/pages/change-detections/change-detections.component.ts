@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './change-detections.component.html',
-  styles: ``
+  
 })
-export class ChangeDetectionsComponent {
+export default class ChangeDetectionsComponent {
 
 }

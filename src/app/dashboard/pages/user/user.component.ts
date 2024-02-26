@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './user.component.html',
-  styles: ``
+  
 })
-export class UserComponent {
+export default class UserComponent {
 
 }

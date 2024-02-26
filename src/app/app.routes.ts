@@ -9,8 +9,34 @@ export const routes: Routes = [
     children:[
         {
             path: 'change-detection',
-            title: 'change-detection',
-            loadComponent:() => import('./dashboard/pages/change-detections/change-detections.component').then()
+            title: 'Change-detection',
+            loadComponent:() => import('./dashboard/pages/change-detections/change-detections.component')
+        },{
+            path: 'control-flow',
+            title: 'Control-flow',
+            loadComponent:() => import('./dashboard/pages/control-flow/control-flow.component')
+        },{
+            path: 'defer-options',
+            title: 'Defer-options',
+            loadComponent:() => import('./dashboard/pages/defer-options/defer-options.component')
+        },{
+            path: 'defer-views',
+            title: 'Defer-views',
+            loadComponent:() => import('./dashboard/pages/defer-views/defer-views.component')
+        },{
+            path: 'user/:id',
+            title: 'User view',
+            loadComponent:() => import('./dashboard/pages/user/user.component')
+        },{
+            path: 'user-list',
+            title: 'User List',
+            loadComponent:() => import('./dashboard/pages/users/users.component')
+        },{
+            path: 'view-transition',
+            title: 'View-transition',
+            loadComponent:() => import('./dashboard/pages/view-transition/view-transition.component')
+        },{
+            path:'', redirectTo:'control-flow', pathMatch:'full',
         }
         
         
