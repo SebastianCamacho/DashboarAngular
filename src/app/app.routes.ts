@@ -11,7 +11,7 @@ export const routes: Routes = [
         {
             path: 'change-detection',
             title: 'Change-detection',
-            // component:  ChangeDetectionsComponent, este es un ejemplo tambien se puede llamar asi los componentes
+            // component:  ChangeDetectionsComponent, este es un ejemplo tambien se puede llamar asi los componentes, menos eficiente
             loadComponent:() => import('./dashboard/pages/change-detections/change-detections.component')
         },{
             path: 'control-flow',
