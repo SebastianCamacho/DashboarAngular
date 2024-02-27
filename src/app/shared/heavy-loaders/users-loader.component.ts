@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
       users-loader works!
     </p>
   `,
-  styles: ``
+ 
 })
 export class UsersLoaderComponent {
   constructor(){}

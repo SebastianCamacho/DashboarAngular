@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
       heavy-loaders-slow works!
     </p>
     `,
-  styles: ``
+ 
 })
 export class HeavyLoadersSlowComponent {
 

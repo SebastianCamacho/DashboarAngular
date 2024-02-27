@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
-import path from 'path';
+
+// import ChangeDetectionsComponent from './dashboard/pages/change-detections/change-detections.component';
 
 export const routes: Routes = [
 
@@ -10,6 +11,7 @@ export const routes: Routes = [
         {
             path: 'change-detection',
             title: 'Change-detection',
+            // component:  ChangeDetectionsComponent, este es un ejemplo tambien se puede llamar asi los componentes
             loadComponent:() => import('./dashboard/pages/change-detections/change-detections.component')
         },{
             path: 'control-flow',
@@ -35,7 +37,8 @@ export const routes: Routes = [
             path: 'view-transition',
             title: 'View-transition',
             loadComponent:() => import('./dashboard/pages/view-transition/view-transition.component')
-        },{
+        },
+        {
             path:'', redirectTo:'control-flow', pathMatch:'full',
         }
         
