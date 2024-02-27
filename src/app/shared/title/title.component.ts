@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
+
 
 @Component({
   selector: 'app-title',
@@ -9,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class TitleComponent {
 
+  @Input({required:true}) titulo!: string;
+    
 }
