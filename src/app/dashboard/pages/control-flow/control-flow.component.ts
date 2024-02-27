@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,5 +8,9 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   templateUrl: './control-flow.component.html',
 })
 export default class ControlFlowComponent {
+  public showContent = signal(false);
+  public toggleContent(){
+    this.showContent.update(value=>!value);
+  }
 
 }
