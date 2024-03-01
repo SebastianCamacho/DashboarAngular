@@ -1,1 +1,19 @@
-<p>defer-options works!</p>
+<app-title titulo="Defer Optios Component!"></app-title>
+
+<section>
+    <h1 class="text-xl">Interacciones</h1>
+    <hr class="my-4">
+    
+    @defer (on interaction) {
+        <app-heavy-loaders-fast cssClass='bg-blue-600 h-20'>
+            <span>on interaction</span>
+        </app-heavy-loaders-fast>
+    }@placeholder {
+      <div class="w-full h-20 bg-purple-100">
+        click en el div
+      </div>
+    }
+    
+
+
+</section>
